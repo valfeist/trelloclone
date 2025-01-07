@@ -6,30 +6,135 @@ body {
     background-repeat: no-repeat; /* Prevent repeating */
     background-position: center center; /* Center the image */
     height: 100vh; /* Full viewport height */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    background-color: rgba(215, 92, 26, 0.728);
+    align-items: center;
+}
+
+
 
 .boards-button{
     display: inline-flex;
     gap: 10px;
-    padding: 10px;
-    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .boards-button img {
-    width: 2%; /* Specify the desired width */
-    max-width: 10px;
+    width: 100%; /* Specify the desired width */
+    min-width: 25px;
+    height: 3vh;
+    padding: 5px;
 }
 
-/* .search */
 
-/* .trello-logo */
+.userprofile-button{
+    display: inline-flex;
+    gap: 10px;
+    padding: 0px;
+    border-radius: 5px;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    justify-content: center;
+    
+}
 
-/* .settings */
+.userprofile-button img {
+   /* Specify the desired width */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px 0px 0px 5px;
+}
 
-/* .subheader */
 
+.search{    
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    height: 4vh;
+}
+
+.search img{
+    padding: 0px 10px 0px 10px;
+    width: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.trello-logo {
+    text-align: center;
+}
+
+.left {
+    display: inline-flex;
+    gap: 10px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle {
+    display: inline-flex;
+    gap: 10px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    display: inline-flex;
+    gap: 10px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+}
+
+.subheader-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+}
+.subheader-right {
+
+}
 
 .cie-overview {
     border: 10px;
@@ -48,9 +153,33 @@ h2{
     color: white;
     font-weight: bold;
     margin: 0;
+    font-size: 20px;
+    padding: 5px;
 }
 
-.shortcuts
+h5 {
+    color: white;
+    margin: 0;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.shortcuts{
+    display: inline-flex;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 4vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortcuts img {
+    width: 100%; /* Specify the desired width */
+    min-width: 25px;
+    height: 3vh;
+    padding: 5px;
+}
 
 .chatmenu
 
