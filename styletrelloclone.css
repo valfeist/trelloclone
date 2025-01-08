@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -85,7 +89,7 @@ header{
 }
 
 .left {
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     padding: 0px;
     margin: 10px;
@@ -96,7 +100,7 @@ header{
 }
 
 .middle {
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     padding: 0px;
     margin: 10px;
@@ -107,7 +111,7 @@ header{
 }
 
 .right{
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     padding: 0px;
     margin: 10px;
@@ -120,8 +124,8 @@ header{
 .subheader{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     gap: 20px;
-    padding: 5px;
     align-items: center;
 }
 
@@ -133,7 +137,11 @@ header{
     align-items: center;
 }
 .subheader-right {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
 }
 
 .cie-overview {
@@ -143,6 +151,10 @@ header{
     justify-content: left;
     align-items: center;
     gap: 20px;
+}
+
+.cie-overview img{
+    height: 5vh;
 }
 
 h1{ 
@@ -157,31 +169,37 @@ h2{
     padding: 5px;
 }
 
+h4{
+    color: #959597;
+    padding: 5px;
+}
+
 h5 {
     color: white;
     margin: 0;
-    font-size: 10px;
+    font-size: 15px;
+    padding: 0px;
+    display: inline;
+}
+
+p{
+    font-size: large;
     padding: 5px;
 }
 
 .shortcuts{
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     padding: 5px;
-    border-radius: 5px;
-    height: 4vh;
     align-items: center;
-    justify-content: center;
+
 }
 
 .shortcuts img {
-    width: 100%; /* Specify the desired width */
     min-width: 25px;
     height: 3vh;
     padding: 5px;
 }
-
-.chatmenu
 
 .boards-scroll {
     grid-template-columns: 1;
@@ -191,19 +209,98 @@ h5 {
     grid-template-columns: 2;
 }
 
-.board-subheader
+.board{
+    display: grid;
+    gap: 10px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: #E9E9EB;
+    padding: 10px;
+    
+}
 
-.board-title
+.board-title {
+    display: flex;
+    width: 100%;
+}
+.board-subheader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
-.kebab-menu
+.kebab-menu img{
+    min-width: 25px;
+    height: 3vh;
+    padding: 5px;
+}
 
-.board-task
+.board-task {
+    display: grid;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    gap: 8px;
+}
 
-.task-color-grid
+.task-color-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+   
+    gap: 4px;
+}
 
-.task-title
+.color-bubble {
+    border-radius: 10px;
+    height: 10px;;
+}
 
-.task-metadata
+.darkgreen{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+.red{
+    background-color: red;
+}
+.purple{
+    background-color: purple;
+}
+.blue{
+    background-color: blue;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.yellowgreen{
+    background-color: yellowgreen;
+}
+.pink{
+    background-color: pink ;
+}
+.grey{
+    background-color: grey;
+}
+
+.task-title {
+    width: 100%;
+}
+
+.task-metadata{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+}
 
 .task-description
 
@@ -217,5 +314,4 @@ h5 {
 
 .task-photo
 
-.addcard
-
+.addcard{}
