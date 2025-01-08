@@ -312,38 +312,43 @@ p{
 }
 
 .task-metadata{
-    display: inline-flex;
+    display: flex;
     gap: 10px;
     padding: 5px;
     align-items: center;
     box-sizing: border-box;
 }
+.task-metadata img{
+    width:50%
 
-.task-description {
-    display: flex;
-    box-sizing: border-box;
 }
 
-.task-description img{
-    width: 40%;
-    height: auto;
+.subject {
+    display: flex;
+    box-sizing: border-box;
 }
 
 .task-duedate {
     display: flex;
     box-sizing: border-box;
 }
-.task-duedate img{
-    width: 20%;
-    height: auto;
+
+
+.task-comment{
+    display: flex;
+    box-sizing: border-box;
 }
 
+.task-attached{
+    display: flex;
+    box-sizing: border-box;
+}
 
-.task-comment
-
-.task-attached
-
-.task-completion
+.task-completion{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
 
 .task-photo
 
